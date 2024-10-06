@@ -11,9 +11,21 @@ public class TestController {
 
     private final WebClient webClient;
 
-    @GetMapping("/test")
+    @GetMapping("/delay1")
     public String test() throws InterruptedException {
-        Thread.sleep(2000L);
+        Thread.sleep(1000L);
+        return "Hello World! ";
+    }
+
+    @GetMapping("/delay5")
+    public String test5() throws InterruptedException {
+        Thread.sleep(5000L);
+        return "Hello World! ";
+    }
+
+    @GetMapping("/delay10")
+    public String test10() throws InterruptedException {
+        Thread.sleep(10000L);
         return "Hello World! ";
     }
 
