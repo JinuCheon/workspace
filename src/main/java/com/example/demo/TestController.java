@@ -9,6 +9,6 @@ public class TestController {
     @GetMapping("/test")
     public String test() throws InterruptedException {
         Thread.sleep(2000L);
-        return "Hello World!";
+        return "Hello World! ";
     }
 }
