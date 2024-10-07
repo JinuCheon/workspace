@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H3MJV72RL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3H3MJV72RL');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="안동 최고의 스테이크를 자신하는 프라하 레스토랑 안동시 정하동 스테이크 파스타 스파게티 피자 리소토 필라프 돌잔치 야외웨딩" />
+  <title>안동 프라하 레스토랑</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=zl6808ll2x"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <main role="main" id="Main">
+    <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-s">
+        
+        <div class="modal-header">
+          <h5 class="text-light modal-title">Menu</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="menu-image-container modal-content">
+          <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/menu1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/menu2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/menu3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/menu4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/menu5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/menu6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/menu7.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Homepage-Hero" class="hero-image">
+      <div class="container-fluid row h-100 align-items-center">
+        <div class="hero-content-wrapper container">
+          <p class="hero-title display-4 text-light mb-5">Praha Restaurant : Steak House</p>
+          <a class="hero-menu-link link-light h4" href="#Homepage-Operation">운영시간</a></br>
+          <a class="hero-menu-link link-light h4" href="#Homepage-Event">스몰웨딩 & 돌잔치 & 모임</a></br>
+          <a class="hero-menu-link link-light h4" href="#Homepage-Contact">연락처</a></br>
+          <a class="hero-menu-link link-light h4" href="#Homepage-Location">오시는길</a></br>
+          <p class="lead text-light"></p>
+          <button type="button" class="menu-btn btn btn-outline-light btn-lg mt-5 w-50 fs-3" data-bs-toggle="modal"
+            data-bs-target="#meuModal">Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="Homepage-Operation" class="section-margin container row align-items-center h-100">
+        <div class="section-header col-md-6 mx-auto py-5">
+          <p class="section-title h2 text-center">Operation</p>
+          <p class="section-title h4 text-center">영업시간</p>
+        </div>
+        <div class="section-subtitle col-md-6">
+          <p class="text-center">연중무휴</p>
+          <p class="text-center">평일 : 11:30 ~ 21:30</p>
+          <p class="text-center">주말/공휴일 : 12:00 ~ 21:00</p>
+          <p class="text-center">Breaktime : 14:30 ~ 17:30</p>
+          <p class="text-center">* 주말에는 행사가 있을 수 있으니, 예약전화 부탁드립니다 *</p>
+        </div>
+      </div>
+      
+      <hr>
+
+      <div id="Homepage-Event" class="section-margin container row align-items-center h-100">
+        <div class="section-header col-md-6 mx-auto py-5">
+          <p class="section-title h2 text-center">Event</p>
+          <p class="section-title h4 text-center">행사/스몰웨딩/돌잔치</p>
+        </div>
+        <div class="section-subtitle col-md-6">
+          <p class="text-center">비즈니스 세미나, 스몰웨딩, 돌잔치를 진행하고 있습니다</p>
+          <p class="text-center">체코 프라하에서 영감을 받은 인테리어와</p>
+          <p class="text-center">아름다운 정원에서 즐거운 시간을 보내세요</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="Homepage-Contact" class="section-margin container row align-items-center h-100">
+        <div class="section-header col-md-6 mx-auto py-5">
+          <p class="section-title h2 text-center">Contact</p>
+          <p class="section-title h4 text-center">전화번호</p>
+        </div>
+        <div onclick="location.href='tel:054-859-3467'" class="section-subtitle col">
+          <p class="h3 text-center">054-859-3467</p>
+          <p class="text-center">터치하시면 연결됩니다</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="Homepage-Location" class="section-margin container row align-items-center h-100">
+        <div class="section-header col-md-6 mx-auto py-5">
+          <p class="section-title h2 text-center">Location</p>
+          <p class="section-title h4 text-center">오시는길</p>
+        </div>
+        <div class="section-subtitle col-md-6">
+          <div id="map" class="naver-map"></div>
+          <p class="section-title text-center">경북 안동시 아늑길 10</p>
+        </div>
+      </div>
+
+
+    </div>
+    <div id="Footer" class="footer py-4 container-fluid row">
+      <div class="section-header col">
+        <div class="section-subtitle">
+          <p class="text-center text-light">경북 안동시 아늑길 10 | Tel: (054)859-3467<br>Copyright © 2020 Andong Praha
+            Restaurant. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="scripts/naver-map.js"></script>
+</body>
+
+</html>

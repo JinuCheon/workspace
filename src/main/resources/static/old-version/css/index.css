@@ -1,0 +1,196 @@
+@font-face{
+  font-family: "GodoM";
+  src: url("../font/GodoM.ttf");
+}
+@font-face { font-family: '국립박물관문화재단클래식B'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff'); font-weight: normal; font-style: normal; }
+html,body,header,ul,li,div,a{margin:0;padding:0;}
+html{
+  font-family: 'GodoM';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow:hidden;
+}
+header{
+  overflow:hidden;
+}
+#nav{
+  width: 100%;
+  background-color: black;
+  padding-left:20%;
+  height:40px;
+}
+#nav ul li{
+  list-style: none;
+  color:none;
+  background-color: black;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  width: 15%;
+}
+#nav ul li a{
+  text-decoration:none;
+  color: white;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+#nav a:hover{
+  color: red;
+  background-color: gray;
+}
+
+#title{
+  width: 100%;
+  height: 90px;
+  background-color: #760c0c;
+  text-align: center;
+}
+#logo img{
+  padding-top: 15px;
+  height: 70px;
+}
+
+#wrapper{
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  overflow:hidden;
+}
+
+article{
+  width: 80%;
+  height: 100%;
+  float: left;
+  background-color: black;
+}
+
+#slide{
+  width: 80%;
+  float: left;
+}
+#instagram{
+  background-color: whitesmoke;
+  width: 20%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+#instagram img{
+  width: 100%;
+}
+iframe{
+  width: 100%;
+  height: 100vh;
+}
+
+aside{
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.boxes{
+  color: white;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 5%;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  line-height: 1em;
+  padding:0.5em;
+  background-color: gainsboro;
+}
+#box1{
+  font-size: 1.5vw;
+  background-image: url("../img/10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 25%;
+}
+#box1 p:nth-child(1){
+  padding-top: 1.5vh;
+}
+#box2{
+  font-size: 22px;
+  background-image: url("../img/9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30%;
+}
+#box2 p:nth-child(1){
+  padding-top: -1vh;
+}
+#box3{
+  font-size: 25px;
+  background-image: url("../img/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 25%;
+}
+#box3 p:nth-child(1){
+  padding-top: 3vh;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom:0;
+
+}
+footer address{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  color: white;
+  font-style: normal;
+}
+footer img{
+  width: 30px;
+}
+@media screen and (min-width: 900px) {
+  #mobileText{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #instagram{
+    display: none;
+  }
+  aside{
+    display: none;
+  }
+  #slide{
+    width: auto;
+    height: 100%;
+    margin-left: -150px;
+  }
+  #mobileWarp{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  #mobileText{
+    height: 100%;
+    color: honeydew;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+}

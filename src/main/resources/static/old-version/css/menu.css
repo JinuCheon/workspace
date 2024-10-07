@@ -1,0 +1,123 @@
+@font-face{
+  font-family: "GodoM";
+  src: url("../font/GodoM.ttf");
+}
+@font-face { font-family: '국립박물관문화재단클래식B'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff'); font-weight: normal; font-style: normal; }
+html,body,header,ul,li,div,a{margin:0;padding:0;}
+html{
+  font-family: 'GodoM';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+header{
+  overflow:hidden;
+}
+#nav{
+  width: 100%;
+  background-color: black;
+  padding-left:20%;
+  height:40px;
+}
+#nav ul li{
+  list-style: none;
+  color:none;
+  background-color: black;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  width: 15%;
+}
+#nav ul li a{
+  text-decoration:none;
+  color: white;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+#nav a:hover{
+  color: red;
+  background-color: gray;
+}
+
+#title{
+  width: 100%;
+  height: 90px;
+  background-color: #760c0c;
+  text-align: center;
+}
+#logo img{
+  padding-top: 15px;
+  height: 70px;
+}
+
+#menu{
+  float: left;
+}
+
+#menu img{
+  width: 49.5%;
+  margin:0;
+  padding:0;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  bottom:0;
+
+}
+footer address{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  color: white;
+  font-style: normal;
+}
+footer img{
+  width: 30px;
+}
+@media screen and (min-width: 900px) {
+  #mobileText{
+    display: none;
+  }
+  #menu {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #menu img{
+    width:100%;
+  }
+  #instagram{
+    display: none;
+  }
+  aside{
+    display: none;
+  }
+  #slide{
+    width: auto;
+    height: 100%;
+    margin-left: -150px;
+  }
+  #mobileWarp{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  #mobileText{
+    height: 100%;
+    color: honeydew;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+}

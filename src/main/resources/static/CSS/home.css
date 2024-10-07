@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'kyobo';
+  src: url('../ttf/KyoboHandwriting2020pdy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  font-family: "Times New Roman", "kyobo";
+  width: 100%;
+  background-color: rgb(255, 252, 244);
+}
+
+/* hero page */
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-background.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.hero-content-wrapper{
+  padding-left: 10%;
+}
+
+.hero-menu-link {
+  text-decoration: none;
+  margin-left: 2rem;
+  color: rgb(255, 252, 244);
+}
+
+.menu-btn {
+  margin-left: 2rem;
+}
+
+/* content containers */
+
+.section-margin {
+  margin-top: 11rem;
+  margin-bottom: 11rem;
+}
+
+.section-subtitle p, .section-subtitle h2 {
+  line-height:40px;
+  margin:0;
+}
+
+.footer {
+  background-color: rgb(73, 40, 0);
+}
+
+/* modal */
+
+.modal-dialog {
+  height: 90vh;
+}
+
+.menu-image-container {
+  text-align: center;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 90vh;
+}
+
+.close {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+/* naver map */
+.naver-map {
+  width: 100%;
+  height: 400px;
+}
+
+.iw_inner {
+  padding-left: 10px;
+}
