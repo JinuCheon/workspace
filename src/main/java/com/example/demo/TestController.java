@@ -34,7 +34,8 @@ public class TestController {
     public String call() {
         System.out.println("==================================================================");
         return webClient.get()
-                .uri("http://34.47.119.193:8080/test")
+//                .uri("http://34.54.254.223/test") // HTTP
+                .uri("https://34.54.254.223/test") // HTTPS
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
