@@ -33,7 +33,7 @@ configurations {
 	}
 }
 
-repositories {
+repositories {6
 	mavenCentral()
 }
 
