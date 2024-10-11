@@ -32,7 +32,7 @@ public class TestController {
     @GetMapping("/call-http")
     public String callHttp() {
         return webClient.get()
-                .uri("http://34.54.254.223/test") // HTTP
+                .uri("http://34.54.254.223/delay1") // HTTP
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
@@ -41,7 +41,7 @@ public class TestController {
     @GetMapping("/call-https")
     public String callHttps() {
         return webClient.get()
-                .uri("http://34.54.254.223/test") // HTTP
+                .uri("https://34.54.254.223/delay1") // HTTP
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
