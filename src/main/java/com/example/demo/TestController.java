@@ -29,13 +29,19 @@ public class TestController {
         return "Hello World! ";
     }
 
-    //  34.47.119.193:8080/test GET 요청을 보낸다
-    @GetMapping("/call")
-    public String call() {
-        System.out.println("==================================================================");
+    @GetMapping("/call-http")
+    public String callHttp() {
         return webClient.get()
-//                .uri("http://34.54.254.223/test") // HTTP
-                .uri("https://34.54.254.223/test") // HTTPS
+                .uri("http://34.54.254.223/test") // HTTP
+                .retrieve()
+                .bodyToMono(String.class)
+                .block();
+    }
+
+    @GetMapping("/call-https")
+    public String callHttps() {
+        return webClient.get()
+                .uri("http://34.54.254.223/test") // HTTP
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
